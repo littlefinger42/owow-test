@@ -1,7 +1,11 @@
+$primary-color: #007bff;
+
 $text-color: #444;
+$text-color-alt: #fff;
 $text-color-lighter: lighten($text-color, 40);
 
 $border-colour: #ddd;
+$border-radius: 16px;
 
 $padding-xs: 8px;
 $padding-sm: 16px;
@@ -11,3 +15,5 @@ $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
 $screen-xl: 1600px;
+
+$box-shadow: 0 6px 4px -4px #ccc;
