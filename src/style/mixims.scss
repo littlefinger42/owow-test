@@ -1,0 +1,23 @@
+@mixin responsive($class) {
+	@if $class == xs {
+	  @media (max-width: calc($screen-sm - 1px)) { @content; }
+	}
+	@else if $class == sm {
+	  @media (min-width: $screen-sm) { @content; }
+	}
+   
+	@else if $class == md {
+	  @media (min-width: $screen-md) { @content; }
+	}
+   
+	@else if $class == lg {
+	  @media (min-width: $screen-lg) { @content; }
+	}
+	@else if $class == xl {
+	  @media (min-width: $screen-xl) { @content; }
+	}
+   
+	@else {
+	  @warn "Responsive mixin supports: xs, sm, md, lg, xl";
+	}
+}
