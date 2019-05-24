@@ -9,7 +9,7 @@
 export default {
   name: "Match",
   props: {
-    users: Object,
+    users: Array,
     status: Number
   }
 };
