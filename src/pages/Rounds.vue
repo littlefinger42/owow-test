@@ -2,10 +2,10 @@
   <ul id="rounds" class="list-unstyled">
     <Round
       v-for="round in rounds"
-      v-bind:key="round.id"
-      v-bind:id="`${round.id}`"
-      v-bind:title="round.name"
-      v-bind:ends="round.ending_at"
+      :key="round.id"
+      :id="`${round.id}`"
+      :title="round.name"
+      :ends="round.ending_at"
     />
   </ul>
 </template>
