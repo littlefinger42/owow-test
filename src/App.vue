@@ -1,17 +1,12 @@
 <template>
   <b-container id="app">
-    <Rounds msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </b-container>
 </template>
 
 <script>
-import Rounds from './pages/Rounds.vue'
-
 export default {
-  name: 'app',
-  components: {
-    Rounds
-  }
+  name: 'app'
 }
 </script>
 
